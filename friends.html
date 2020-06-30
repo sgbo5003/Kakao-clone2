@@ -3,63 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Friends | kakao Clone</title>
+
+    <script
+      src="https://kit.fontawesome.com/42f9597207.js"
       crossorigin="anonymous"
-    />
-    <title>Friends | kakao clone</title>
+    ></script>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+      <div class="status-bar_column">
+        <span class=".status-bar_clock">13:54</span>
       </div>
-      <div class="status-bar__column">
+
+      <div class="status-bar_column">
         <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
+        <!--시계-->
+        <i class="fas fa-volume-up"></i>
+        <!--스피커-->
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
+        <!--와이파이-->
+        <span class="status-bar_battery-level"></span>
         <i class="fas fa-battery-full"></i>
+        <!--베터리-->
       </div>
     </div>
+
     <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
+      <div class="header_header-column">
+        <h1 class="header_title">Friends</h1>
       </div>
-      <div class="header__header-column">
-        <span class="header__icon">
+
+      <div class="hheader_header-column">
+        <span class="header_icon">
           <i class="fas fa-search"></i>
+          <!--검색-->
         </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
+
+        <span class="header_icon">
           <i class="fas fa-cog"></i>
+          <!--설정-->
         </span>
       </div>
     </header>
+
+    <main class="friends">
+      <header class="friends_header">
+        <div class="friends_friend friend friends--lg">
+          <div class="friend_column">
+            <img src="./images/avatar.jpg" class="g-avatar friend__avatar" />
+
+            <div class="friend_content">
+              <span class="friend_name">
+                Sangjun
+              </span>
+
+              <span class="friend_status">
+                nomadcoders.co
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="friends_plus-friend">
+        <h5 class="friends_plus-title">Plus friend</h5>
+
+        <div class="friends_friend friend">
+          <div class="friend_column">
+            <img src="./images/avatar.jpg" class="g-avatar friend__avatar" />
+            <div class="friend_content">
+              <span class="friend_name">
+                Plus Friend
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="friend__list">
+        <h5 class="friends-title">Friends 14</h5>
+        <li class="friends__friend friend friends--lg">
+          <div class="friend__column">
+            <img src="./images/avatar.jpg" class="g-avatar friend__avatar" />
+
+            <div class="friend__content">
+              <span class="friend__name">
+                Sangjun
+              </span>
+
+              <span class="friend__status">
+                nomadcoders.co
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                FTISLAND (FT NomadCoders)
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="./friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
+            <!--사람-->
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="./index.html" class="nav__list-link">
             <i class="far fa-comment"></i>
+            <!--말풍선-->
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="./find.html" class="nav__list-link">
-            <i class="fas fa-search"></i
-          ></a>
+            <i class="fas fa-search"></i>
+            <!--검색-->
+          </a>
         </li>
+
         <li class="nav__list-item">
           <a href="./more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
+            <!--더보기-->
           </a>
         </li>
       </ul>
